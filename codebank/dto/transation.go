@@ -9,7 +9,8 @@ type Transaction struct {
 	ExpirationMonth int32     `json:"-"`
 	ExpirationYear  int32     `json:"-"`
 	CVV             int32     `json:"-"`
-	Amount          float64   `json:"amount"`
+	Status          string    `json:"status"`
+	Amount          float64   `json:"amount"` 
 	Store           string    `json:"store"`
 	Description     string    `json:"description"`
 	CreatedAt       time.Time `json:"payment_date"`
